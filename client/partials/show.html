@@ -1,0 +1,48 @@
+<!-- <div class="container" ng-controller="userController"> -->
+<div class="jumbotron" ng-controller="userController">
+  <h1 class="display-3">Show Friend</h1>
+
+    <!-- FIRST NAME field input -->
+    <div class="form-group row">
+      <label class="col-sm-2 col-form-label">First Name</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" ng-model ='cur_user.first_name'>
+      </div>
+    </div>
+
+    <!-- LAST NAME field input -->
+    <div class="form-group row">
+      <label class="col-sm-2 col-form-label">Last Name</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control"  ng-model='cur_user.last_name'>
+      </div>
+    </div>
+
+    <!-- Birthday field input -->
+    <div class="form-group row">
+      <label class="col-sm-2 col-form-label">Birthday</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" value="{{cur_user.birthday | date: 'MM-dd-yyyy'}}">
+      </div>
+    </div>
+
+
+    <!-- BUTTON -->
+    <div class="form-group row">
+      <div class="offset-sm-2 col-sm-10">
+        <a class="btn btn-warning btn-lg" href="#/dashboard" role="button">Back to All Friends</a>
+      </div>
+    </div>
+
+</div>
+<style>
+    .container {
+        padding-top: 1cm;
+    }
+    body {
+        /*background-color: #2d5986;*/
+        background-color: #204060;
+        /*background-color: #336699;*/
+        /*background-color: #3366cc;*/
+    }
+</style>
